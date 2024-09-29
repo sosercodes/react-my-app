@@ -26,7 +26,7 @@ Set...
 
 ### `useEffect`
 
-Example see branch [01.use-effect](https://github.com/sosercodes/react-my-app/blob/01.use-effect/src/App.jsx)
+Executes after rendering. Example see branch [01.use-effect](https://github.com/sosercodes/react-my-app/blob/01.use-effect/src/App.jsx)
  
 
 ```javascript
@@ -40,3 +40,9 @@ useEffect(() => {
     // ..of count, an empty array means it will run only after first render
 }, [count]);
 ```
+
+### `useRef`
+
+The `useRef` hook will return a mutable `ref` object which you can use to access DOM nodes.
+
+Exsample see branch [02.use-ref](https://github.com/sosercodes/react-my-app/blob/02.use-ref/src/App.jsx).
