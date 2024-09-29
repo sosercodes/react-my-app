@@ -6,9 +6,15 @@ import './App.css'
 function App() {
   const [count, setCount] = useState(0)
 
+  // runs after each render..
   useEffect(() => {
-    console.log('Hello from useEffect')
-  });
+    console.log('Hello from useEffect');
+    // cleanup runs before 
+    return () => {
+      console.log('Clean up function');
+    };
+    // ..of count, an empty array means it will run only after first render
+  }, [count]);
 
   return (
     <>
